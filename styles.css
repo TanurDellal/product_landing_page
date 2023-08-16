@@ -1,0 +1,585 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: auto;
+  font-family: 'Lato', sans-serif;
+  color: #eee;
+  background-color: rgb(20, 30, 40);
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  background-color: #eee;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  font-weight: 400;
+  z-index: 1;
+}
+
+#header-img {
+  width: 190px;
+  max-width: 70%;
+  aspect-ratio: 20/7;
+  padding: 0.5rem;
+}
+
+nav {
+  width: 800px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000;
+  padding: 20px;
+  border-radius: 50px;
+}
+
+.nav-link:hover {
+  background-color: rgb(20, 30, 40);
+  color: #eee;
+}
+
+.nav-link:active {
+  background-color: #777;
+}
+
+main {
+  position: relative;
+  top: 100px;
+}
+
+#form {
+  margin: 50px auto;
+  margin-bottom: 25px;
+  width: 600px;
+  left: 0;
+  right: 0;
+
+}
+
+legend {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+#email {
+  display: block;
+  margin: auto;
+  margin-bottom: 25px;
+  width: 280px;
+  height: 35px;
+  border: 1px grey solid;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  padding: 5px;
+  background-color: #eee;
+}
+
+#submit {
+  display: block;
+  margin: auto;
+  border: 2px black solid;
+  border-radius: 20px;
+  background-color: crimson;
+  height: 35px;
+  width: 135px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#submit:hover {
+  background-color: darkred;
+}
+
+#submit:active {
+  background-color: crimson;
+}
+
+#Features {
+  margin: auto;
+  max-width: 700px;
+  padding-top: 100px;
+}
+
+.feature {
+  max-width: 700px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.feature:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.icon, .description {
+  display: inline-block;
+
+}
+
+.icon {
+  width: 200px;
+  height: 105px;
+  text-align: center;
+}
+
+.icon img {
+  height: 100px;
+  padding: 0;
+}
+
+.description {
+  width: 400px;
+  font-size: 1.1rem;
+  margin: auto 0;
+}
+
+.description p {
+  padding-top: 5px;
+}
+
+#How_It_Works {
+  padding: 75px 0;
+  margin: 50px auto;
+  text-align: center;
+}
+
+iframe {
+  width: 600px;
+  height: 340px;
+}
+
+#Pricing {
+  font-size: 1.2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.product {
+  border: 1px solid #eee;
+  max-width: 370px;
+  height: 375px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.title {
+  background-color: rgba(68,68,68,0.5);
+  margin: auto;
+  padding: 20px;
+}
+
+.product h2 {
+  padding: 20px;
+}
+
+.product ul {
+  list-style: none;
+  padding: 0 10px;
+  font-size: 1rem;
+}
+
+.product li {
+  padding: 5px;
+}
+
+#select {
+  text-decoration: none;
+  color: black;
+  background-color: crimson;
+  padding: 10px;
+  display: block;
+  width: 120px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 35px auto 0;
+}
+
+footer {
+  background-color: rgba(68,68,68,0.5);
+  max-width: 1300px;
+  text-align: end;
+  margin: auto;
+  height: 70px;
+}
+
+footer ul {
+  padding: 10px;
+}
+
+footer li {
+  list-style: none;
+  display: inline;
+  margin: 5px 10px;
+}
+
+footer span {
+  padding: 0 5px;
+  font-style: italic;
+}
+
+footer a {
+  text-decoration: none;
+  color: #eee;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer a:active {
+  color: #888;
+}
+
+@media only screen and (max-width: 1920px) {
+
+  header {
+    height: 60px;
+    justify-content: space-between;
+  }
+
+  main {
+    position: relative;
+    top: 90px;
+  }
+
+  #header-img {
+    width: 160px;
+  }
+  nav {
+    width: 450px;
+    font-size: 1.05rem;
+    justify-content: end;
+  }
+  .nav-link {
+    padding: 18px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+
+  header {
+    height: 50px;
+  }
+
+  main {
+    position: relative;
+    top: 80px;
+  }
+
+  #header-img {
+    width: 125px;
+  }
+  nav {
+    width: 410px;
+    font-size: 0.9rem;
+  }
+
+  .nav-link {
+    padding: 14px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  #form {
+    width: 400px;
+  }
+
+  legend {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+  }
+
+  #email {
+    margin-bottom: 20px;
+    width: 230px;
+    height: 30px;
+    font-size: 0.87rem;
+  }
+
+  #submit {
+    height: 30px;
+    width: 120px;
+    font-size: 0.87rem;
+  }
+
+  .icon {
+    width: 180px;
+    min-width: 175px;
+    height: 70px;
+    text-align: center;
+}
+
+  .icon img {
+    height: 70px;
+    padding: 0;
+  }
+
+  .description {
+    max-width: 400px;
+    font-size: 0.95rem;
+    margin: auto 0;
+  }
+
+  iframe {
+    width: 430px;
+    height: 250px;
+  }
+
+  #Pricing {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product {
+    border: 1px solid #eee;
+    max-width: 370px;
+    height: 375px;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .product:last-child {
+    margin-bottom: 0px;
+  }
+
+  .title {
+    background-color: rgba(68,68,68,0.5);
+    margin: auto;
+    padding: 20px;
+  }
+
+  .product h2 {
+    padding: 20px;
+  }
+
+  .product ul {
+    list-style: none;
+    padding: 0 10px;
+    font-size: 0.9rem;
+  }
+
+  .product li {
+    padding: 5px;
+  }
+
+  #select {
+    text-decoration: none;
+    color: black;
+    background-color: crimson;
+    padding: 10px;
+    display: block;
+    width: 120px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 35px auto 0;
+  }
+
+  footer {
+    height: 65px;
+    font-size: 0.9rem;
+  }
+
+}
+
+@media only screen and (max-width: 455px) {
+
+  header {
+    height: 52px;
+  }
+
+  main {
+    position: relative;
+    top: 70px;
+  }
+
+  #header-img {
+    width: 110px;
+  }
+  nav {
+    width: 410px;
+    font-size: 0.8rem;
+  }
+
+  .nav-link {
+    padding: 15px;
+  }
+
+  #form {
+    width: 290px;
+  }
+
+  legend {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+
+  #email {
+    margin-bottom: 10px;
+    width: 210px;
+    height: 25px;
+    font-size: 0.8rem;
+    padding: 3px 5px;
+  }
+
+  #submit {
+    height: 25px;
+    width: 115px;
+    font-size: 0.8rem;
+  }
+
+  .icon {
+    min-width: 150px;
+    width: 150px;
+    height: 60px;
+    text-align: center;
+}
+
+  .icon img {
+    height: 60px;
+    padding: 0;
+  }
+
+  .description {
+    max-width: 400px;
+    font-size: 0.8rem;
+    margin: auto 0;
+  }
+
+  iframe {
+    width: 320px;
+    height: 170px;
+  }
+
+  #Pricing {
+    font-size: 1rem;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+  .product {
+    border: 1px solid #eee;
+    max-width: 300px;
+    height: 300px;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .product:last-child {
+    margin-bottom: 0px;
+  }
+
+  .title {
+    background-color: rgba(68,68,68,0.5);
+    margin: auto;
+    padding: 15px;
+  }
+
+  .product h2 {
+    padding: 15px;
+  }
+
+  .product ul {
+    list-style: none;
+    padding: 0 10px;
+    font-size: 0.8rem;
+  }
+
+  .product li {
+    padding: 5px;
+  }
+
+  #select {
+    text-decoration: none;
+    color: black;
+    background-color: crimson;
+    padding: 7px;
+    display: block;
+    width: 100px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 25px auto 0;
+  }
+
+  footer {
+    height: 55px;
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 388px) {
+
+  header {
+    height: 46px;
+  }
+
+  main {
+    position: relative;
+    top: 60px;
+  }
+
+  #header-img {
+    width: 94px;
+  }
+  nav {
+    width: 380px;
+    font-size: 0.7rem;
+  }
+
+  .nav-link {
+    padding: 14px;
+  }
+
+  #form {
+    max-width: 240px;
+  }
+
+  legend {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+
+  #email {
+    margin-bottom: 10px;
+    width: 210px;
+    height: 25px;
+    font-size: 0.8rem;
+    padding: 3px 5px;
+  }
+
+  iframe {
+    width: 260px;
+    height: 140px;
+  }
+}
