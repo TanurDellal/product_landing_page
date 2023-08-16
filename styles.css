@@ -218,6 +218,16 @@ iframe {
   margin: 35px auto 0;
 }
 
+#url {
+  font-style: normal;
+  text-decoration: underline;
+}
+
+#url:hover {
+  font-weight: bold;
+  text-decoration: none;
+}
+
 footer {
   background-color: rgba(68,68,68,0.5);
   max-width: 1300px;
